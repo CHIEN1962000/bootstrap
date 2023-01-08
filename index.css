@@ -2,6 +2,11 @@ body {
     margin: 0;
     box-sizing: border-box;
 }
+.container {
+  width: 100%;
+  height: auto;
+  margin-left: 0px;
+}
 
 .side-bar {
     width: 100%;
@@ -212,7 +217,7 @@ form.example input[type=text] {
 .itemm {
     width: 300px;
     height: 150px;
-    padding: 10px;
+    padding: 1px;
     margin-top: 20px;
     
 }
@@ -234,17 +239,28 @@ form.example input[type=text] {
 }
 
 .chu {
-  display: block;
+  /* display: block; */
   display: flex;
   color: white;
 }
+.chu item-icon i{
+  vertical-align: middle;
+}
+.chu h1 {
+  margin: 8px 0px 0px 10px;
+  font-size: 30px;
+}
 .chu p {
-  font-size: 15px;
+  display: block;
+  text-overflow: clip;
+  font-size: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .item-nutbam button{
-  width: 300px;
-  margin-left: -10px;
-  margin-top: 7px;
+  width: 100%;
+  /* margin-left: -10px; */
+  margin: 36px 0px 0px 0px;
 }
 .item-nutbam button:hover {
   background-color: white;
@@ -253,7 +269,7 @@ form.example input[type=text] {
 
 .item-icon i{
   display: block;
-  font-size: 80px;
+  font-size: 50px;
   margin-left: 70px;
-  margin-top: 5px;
+  margin-top: 10px;
 }
