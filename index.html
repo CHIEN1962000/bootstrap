@@ -44,8 +44,10 @@
 
                     <div class="menu col-12 col-lg-12 col-md-12">
                         <div class="dropdown">
-                            <button class="btn" style="border-left:1px solid #0d8bf2; color: white;">Trang chủ
-                              <i class="fa-sharp fa-solid fa-caret-left"></i>
+                            <button class="btn" style="border:1px solid black; color: white;">
+                                <span style="float: left;"><i class="fa-sharp fa-solid fa-house"></i></span>
+                                <span>Trang chủ</span>
+                                <i class="fa-sharp fa-solid fa-caret-left"></i>
                             </button>
                             <div class="dropdown-content">
                               <a href="#">Link 1</a>
@@ -58,12 +60,29 @@
 
                     <div class="menu col-12 col-lg-12 col-md-12">
                         <div class="dropdown">
-                            <button class="btn" style="border-left:1px solid #0d8bf2; color: white;">Quản lý sản phẩm
-                              <i class="fa-sharp fa-solid fa-caret-left"></i>
+                            <button class="btn" style="border:1px solid black; color: white;">
+                                <span style="float: left;"><i class="fa-sharp fa-solid fa-gift"></i></span>
+                                <span>Quản lý sản phẩm</span>
+                                <i class="fa-sharp fa-solid fa-caret-left"></i>
                             </button>
                             <div class="dropdown-content">
-                              <a href="#">Link 1</a>
-                              <a href="#">Link 2</a>
+                              <a href="#">Thêm mới</a>
+                              <a href="#">Danh sách</a>
+                              <a href="#">Link 3</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu col-12 col-lg-12 col-md-12">
+                        <div class="dropdown">
+                            <button class="btn" style="border:1px solid black; color: white;">
+                                <span style="float: left;"><i class="fa-solid fa-user-plus"></i></span>
+                                <span>Quản lý người dùng</span>
+                                <i class="fa-sharp fa-solid fa-caret-left"></i>
+                            </button>
+                            <div class="dropdown-content">
+                              <a href="#">Thêm mới</a>
+                              <a href="#">Danh sách</a>
                               <a href="#">Link 3</a>
                             </div>
                         </div>
@@ -89,55 +108,76 @@
                     </div>
                 </div>
 
+                <!--hang 2 -->
                 <div class="row">
-                    <div class="col-12 col-lg-3 col-md-6">
-                        <div class="itemm item-1">
-                            <div class="chu">
-                                <h1>150</h1>
-                                <p>New orders</p>
-                            </div>
-                            <div class="icon-item">
-                                <i class="fa-sharp fa-solid fa-bag-shopping"></i>
-                            </div>
-                            <button>More</button>
+                    <div class="col-12 col-lg-12 col-md-12 hang-2">
+                        <h1>Trang chủ</h1>
+                        <a href="#">Trang chủ</a>
+                    </div>
+                </div>
+                <!--hang 3-->
+                <div class="row">
+                    <div class="col-12 col-lg-8 col-md-12 col-1">
+                        <div class="thongtinsp">
+                            <h4>Thông tin sản phẩm</h4><hr>
+                            <form action="/action_page.php">
+                                <label for="fname">Tên sản phẩm(*)</label>
+                                <input type="text" id="fname" name="firstname" style="height: 40px;">
+                                
+                                <label for="subject">Mô tả ngắn(*)</label>
+                                <textarea id="subject" name="subject" style="height:60px"></textarea>
+                            
+                                <label for="">Chi tiết(*)</label>
+                            </form>
+                        </div>
+
+                        <div class="thongtinsp">
+                            <h4>Dữ liệu sản phẩm</h4><hr>
+                            <form action="/action_page.php">
+                                <label for="bg">Bảng giá(*)(VND)</label>
+                                <input type="text" id="bg" name="firstname" style="height: 40px;">
+                                
+                                <label for="tt">Trạng thái(*)</label>
+                                <select name="tt" id="">
+                                    <option value="">Mới</option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                </select>
+                                <label for="">Chi tiết(*)</label>
+                            </form>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-3 col-md-6">
-                        <div class="itemm item-2">
-                            <div class="chu">
-                                <h1>53%</h1>
-                                <p>Bounce Rate</p>
-                            </div>
-                            <div class="icon-item">
-                                <i class="fa-solid fa-chart-simple"></i>
-                            </div>
-                            <button></button>
+                    <div class="col-12 col-lg-4 col-md-12 col-2">
+                        <div class="thongtinsp">
+                            <h4>Thể loại sản phẩm</h4><hr>
+                            <form action="/action_page.php">
+                                <label for="tt">Chọn thể loại(*)</label>
+                                <select name="tt" id="">
+                                    <option value="">Điện thoại</option>
+                                    <option value="">Laptop</option>
+                                    <option value="">Tai nghe</option>
+                                </select>
+                            </form>
+                        </div>
+
+                        <div class="thongtinsp">
+                            <h4>Ảnh đại diện</h4><hr>
+                            <form action="/action_page.php">
+                                <label for="chonanh">Chọn ảnh(*)</label>
+                                <p style="font-size: 12px; font-weight: 100;">Định dạng: jpg, png, jpeg, gif, svg -kích cỡ <2MB</p>
+                                <div class="chon-anh">
+                                    <input type="search" placeholder="chọn file" style="width: 50%; border: 1px solid;">
+                                    <button style="width: 22%; border: 1px solid; padding: 1px;">Browse</button>
+                                    <button style="width: 22%; border: 1px solid; padding: 1px;">Upload</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="nb">
+                            <button style="width: 40%; background-color: blue; color: white;">Lưu</button>
+                            <button style="width: 20%;">Hủy</button>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-3 col-md-6">
-                        <div class="itemm item-3">
-                            <div class="chu">
-                                <h1>44</h1>
-                                <p>User</p>
-                            </div>
-                            <div class="icon-item">
-                                <i class="fa-solid fa-user-plus"></i>
-                            </div>
-                            <button></button>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-3 col-md-6">
-                        <div class="itemm item-4">
-                            <div class="chu">
-                                <h1>65</h1>
-                                <p>Unique</p>
-                            </div>
-                            <div class="icon-item">
-                                <i class="fa-sharp fa-solid fa-bag-shopping"></i>
-                            </div>
-                            <button></button>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </div>
